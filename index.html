@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="流星 — ホームページ・LP制作を行うフロントエンドエンジニアのポートフォリオ。"
+    />
+    <title>龍成 — Web Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true"><span>龍　成 </span></div>
+
+    <header class="header">
+      <a class="logo" href="#top" aria-label="トップへ">龍成</a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#about">私について</a>
+        <a href="#works">制作実績</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <p class="eyebrow reveal">
+          ホームページ・LP制作を行う<br />フロントエンドエンジニア
+        </p>
+        <h1 class="hero-title" aria-label="想いを、ウェブへ。">
+          <span class="line"><span>想いを、</span></span>
+          <span class="line italic"><span>ウェブへ。</span></span>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p>
+            見やすく、使いやすく、更新しやすく。<br />目的につながるホームページを丁寧につくります。
+          </p>
+          <a class="circle-link" href="#works" aria-label="制作実績を見る"
+            ><span>作品を<br />見る</span><b>↓</b></a
+          >
+        </div>
+        <div class="hero-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+      </section>
+
+      <section class="about section-pad" id="about">
+        <p class="section-number reveal">壱　/　私について</p>
+        <span class="about-watermark" aria-hidden="true">ABOUT</span>
+        <div class="about-grid">
+          <div class="about-heading reveal">
+            <p class="about-role">龍成 ／ Web Engineer</p>
+            <h2>
+              想いと目的を整理し、<br />伝わるかたちへ<br />丁寧に実装します。
+            </h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="about-intro">
+              東京を拠点に、ホームページやLPを制作しています。見た目の美しさだけでなく、情報の伝わりやすさと使いやすさを大切にしています。
+            </p>
+            <p class="about-detail">
+              ヒアリングから構成、コーディング、公開まで一貫して対応。スマートフォンでの見やすさ、心地よい動き、表示速度や更新のしやすさまで、一つひとつ誠実に向き合います。
+            </p>
+            <dl>
+              <div>
+                <dt><span>01</span>対応内容</dt>
+                <dd>ホームページ・LP制作<br />レスポンシブ対応・保守更新</dd>
+              </div>
+              <div>
+                <dt><span>02</span>使用技術</dt>
+                <dd>HTML / CSS / JavaScript / Git</dd>
+              </div>
+              <div>
+                <dt><span>03</span>ご依頼</dt>
+                <dd>二〇二六年 十月より<br />新規案件を承ります</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="section-pad works-heading">
+          <p class="section-number reveal">弐　/　制作実績</p>
+          <h2 class="reveal">
+            制作 / 携わった<br /><em>ランディングページ。</em>
+          </h2>
+        </div>
+
+        <div id="project-list" aria-label="制作実績一覧"></div>
+      </section>
+
+      <section class="contact section-pad" id="contact">
+        <p class="section-number reveal">参　/　お問い合わせ</p>
+        <div class="contact-main">
+          <div class="contact-heading reveal">
+            <p class="contact-kicker">ご相談・お見積もり</p>
+            <h2>まずは、お話を<br />聞かせてください。</h2>
+          </div>
+          <div class="contact-content reveal">
+            <p class="contact-lead">
+              ホームページやLPの新規制作、リニューアル、更新について承ります。まだ内容が固まっていない段階でも、お気軽にご相談ください。
+            </p>
+            <a class="contact-link" href="mailto:ryuuseiworks628@gmail.com">
+              <span class="contact-link-label">
+                <small>メールでお問い合わせ</small>
+                <strong>ご相談はこちら</strong>
+              </span>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="contact-note">
+              ご相談内容やご希望の公開時期を添えてお送りください。
+            </p>
+          </div>
+        </div>
+        <div class="footer-row reveal">
+          <p>東京、日本<br /><span id="clock">00:00:00</span></p>
+          <div><a href="#">インスタグラム</a><a href="#">エックス</a></div>
+          <p>© <span id="year"></span> 龍成</p>
+        </div>
+      </section>
+    </main>
+    <script src="./data/projects.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
