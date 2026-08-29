@@ -18,7 +18,7 @@
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- Google Fonts（Noto Sans JP / Noto Serif JP）
+- Google Fonts（Noto Sans JP / Manrope）
 - Git / GitHub
 
 パッケージのインストールやビルド作業は不要です。
@@ -28,8 +28,8 @@
 リポジトリを取得し、プロジェクトのルートへ移動します。
 
 ```bash
-git clone https://github.com/Ryuusei-git/new-portfolio.git
-cd new-portfolio
+git clone https://github.com/ryuusei-works/portfolio.git
+cd portfolio
 ```
 
 Pythonの簡易HTTPサーバーを起動します。
@@ -53,7 +53,7 @@ http://localhost:8000
 ```text
 .
 ├── assets/
-│   └── works/              # 制作実績一覧で使用する案件画像
+│   └── *.png               # 制作実績一覧で使用する案件画像
 ├── data/
 │   └── projects.js         # トップページの制作実績一覧データ
 ├── index.html              # トップページ
@@ -65,13 +65,7 @@ http://localhost:8000
 
 ### プロフィールや連絡先を変更する
 
-トップページの文章、対応内容、使用技術、受付時期、メールアドレス、SNSリンクは `index.html` で編集します。
-
-公開前に、次の仮リンクを実際の情報へ変更してください。
-
-- `mailto:hello@example.com`
-- Instagramの `href="#"`
-- Xの `href="#"`
+トップページの文章、対応内容、使用技術、メールアドレスは `index.html` で編集します。
 
 ### 制作実績の一覧を編集する
 
@@ -81,10 +75,9 @@ http://localhost:8000
 {
   title: "案件名",
   role: "担当範囲",
-  year: "2026",
-  yearLabel: "二〇二六",
-  image: "./assets/works/page-example-01.png",
+  image: "./assets/example-lp.png",
   imageAlt: "案件画像の説明",
+  siteUrl: "https://example.com/",
 }
 ```
 
@@ -94,28 +87,28 @@ http://localhost:8000
 | --- | --- |
 | `title` | 一覧に表示する案件名 |
 | `role` | 一覧に表示する担当範囲 |
-| `year` | `<time>` 要素の機械可読な年 |
-| `yearLabel` | 画面に表示する年 |
 | `image` | 一覧画像のパス |
 | `imageAlt` | 画像を説明する代替テキスト |
+| `siteUrl` | 「実際のサイトはこちら」ボタンのリンク先 |
 
 ### 新しい制作実績を追加する
 
-1. 縦長のページ画像を `assets/works/` に配置します。
+1. 縦長のページ画像を `assets/` に配置します。
 2. `data/projects.js` に一覧用データを追加します。
 
 案件データはJavaScriptでHTMLへ挿入されるため、管理者が確認した信頼できる文字列だけを登録してください。
 
 ## 画像の命名例
 
-- ページ全体画像: `page-{slug}-01.png`
+- ページ全体画像: `{slug}-lp.png`
+- プロフィール写真: `profile-photo.png`
 
 画像を追加したら、ファイル名の大文字・小文字を含め、データ内のパスと一致していることを確認してください。
 
 ## 公開前チェック
 
 - 画像が欠けず、代替テキストが内容を説明している
-- 外部サイトのURL、メールアドレス、SNSリンクが正しい
+- 外部サイトのURLとメールアドレスが正しい
 - PCとスマートフォンの両方でレイアウトを確認した
 - メニューとスクロール演出が操作できる
 - ブラウザの開発者ツールにエラーが出ていない

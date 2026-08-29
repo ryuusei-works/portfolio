@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060816" />
     <meta
       name="description"
       content="流星 — ホームページ・LP制作を行うフロントエンドエンジニアのポートフォリオ。"
@@ -11,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="loader" aria-hidden="true"><span>龍　成 </span></div>
+    <div class="loader" aria-hidden="true"><span>RYUSEI / PORTFOLIO</span></div>
 
     <header class="header">
       <a class="logo" href="#top" aria-label="トップへ">龍成</a>
@@ -38,53 +39,76 @@
 
     <main id="top">
       <section class="hero section-pad">
-        <p class="eyebrow reveal">
-          ホームページ・LP制作を行う<br />フロントエンドエンジニア
-        </p>
-        <h1 class="hero-title" aria-label="想いを、ウェブへ。">
-          <span class="line"><span>想いを、</span></span>
-          <span class="line italic"><span>ウェブへ。</span></span>
-        </h1>
+        <div class="hero-heading">
+          <p class="eyebrow reveal">
+            ホームページ・LP制作を行う<br />フロントエンドエンジニア
+          </p>
+          <h1 class="hero-title" aria-label="ウェブ制作を、あなたと一緒に。">
+            <span class="line"><span>Web制作を</span></span>
+            <span class="line indent"><span>あなたと一緒に。</span></span>
+            <small class="hero-title-en" aria-hidden="true"
+              >Let’s build your website together.</small
+            >
+          </h1>
+        </div>
         <div class="hero-bottom reveal">
           <p>
             見やすく、使いやすく、更新しやすく。<br />目的につながるホームページを丁寧につくります。
           </p>
-          <a class="circle-link" href="#works" aria-label="制作実績を見る"
-            ><span>作品を<br />見る</span><b>↓</b></a
-          >
+          <a class="works-link" href="#works">
+            <span>制作実績を見る</span><b aria-hidden="true">↓</b>
+          </a>
         </div>
-        <div class="hero-mark" aria-hidden="true"><i></i><i></i><i></i></div>
       </section>
 
       <section class="about section-pad" id="about">
-        <p class="section-number reveal">壱　/　私について</p>
-        <span class="about-watermark" aria-hidden="true">ABOUT</span>
-        <div class="about-grid">
-          <div class="about-heading reveal">
-            <p class="about-role">龍成 ／ Web Engineer</p>
-            <h2>
-              想いと目的を整理し、<br />伝わるかたちへ<br />丁寧に実装します。
-            </h2>
-          </div>
+        <p class="section-number reveal">01 / ABOUT</p>
+        <div class="about-heading reveal">
+          <p class="about-role">龍成 ／ Web Engineer</p>
+          <h2>現場で培った視点を、<br />伝わるウェブへつなげています。</h2>
+        </div>
+        <div class="about-body">
+          <figure class="about-photo reveal">
+            <img
+              src="./assets/profile-photo.png"
+              alt="龍成のプロフィール写真"
+              width="569"
+              height="479"
+              loading="lazy"
+            />
+          </figure>
           <div class="about-copy reveal">
             <p class="about-intro">
-              東京を拠点に、ホームページやLPを制作しています。見た目の美しさだけでなく、情報の伝わりやすさと使いやすさを大切にしています。
+              現在、Web制作の実務に携わり、Webサイト・LPのコーディングを中心に対応しています。
             </p>
             <p class="about-detail">
-              ヒアリングから構成、コーディング、公開まで一貫して対応。スマートフォンでの見やすさ、心地よい動き、表示速度や更新のしやすさまで、一つひとつ誠実に向き合います。
+              化粧品工場のラインマネージャーを経てWeb制作の道へ進み、2025年から制作会社でホームページ・LP制作やアプリケーション開発に携わっています。<br /><strong class="about-highlight">大手自動車メーカーの車種サイトや、大手飲料メーカーのLP、大手ホテルのWebサイトなどを担当</strong>してきました。
+            </p>
+            <p class="about-detail">
+              HTML・CSS・SCSS・JavaScriptを使用した実装に加え、Figmaデザインからのコーディング、Figmaを使ったLPデザインから実装まで一貫して対応可能です。<br />React・Next.jsを用いたWeb制作にも、案件内容に応じてAIを活用しながら取り組んでいます。
+            </p>
+            <p class="about-detail">
+              デザインをできる限り忠実に再現し、PC・スマートフォンで崩れのない丁寧なコーディングを心がけています。<br />AIで制作を効率化しながら、最終的なデザイン確認・表示チェック・調整は自身で行い、品質を確認したうえで納品します。<br /><strong class="about-highlight">内容によっては、Figmaデザインから最短2日程度でのコーディングも可能</strong>です。
+            </p>
+            <p class="about-detail">
+              迅速なレスポンス、丁寧な仕様確認、進捗共有、納期厳守を大切にしています。<br />小規模な修正からLP・Webサイト制作まで、まずはお気軽にご相談ください。
+            </p>
+            <p class="about-note">
+              ※ 守秘義務のため、担当案件の企業名や詳細は非公開としています。
             </p>
             <dl>
               <div>
                 <dt><span>01</span>対応内容</dt>
-                <dd>ホームページ・LP制作<br />レスポンシブ対応・保守更新</dd>
+                <dd>
+                  ホームページ・LPのコーディング<br />Figmaデザイン・コーディング<br />レスポンシブ・アニメーション実装<br />既存サイトの修正・レイアウト調整
+                </dd>
               </div>
               <div>
                 <dt><span>02</span>使用技術</dt>
-                <dd>HTML / CSS / JavaScript / Git</dd>
-              </div>
-              <div>
-                <dt><span>03</span>ご依頼</dt>
-                <dd>二〇二六年 十月より<br />新規案件を承ります</dd>
+                <dd>
+                  HTML / CSS / SCSS / JavaScript<br />TypeScript / React /
+                  Next.js<br />Figma / Git / AI Tools
+                </dd>
               </div>
             </dl>
           </div>
@@ -93,17 +117,15 @@
 
       <section class="works" id="works">
         <div class="section-pad works-heading">
-          <p class="section-number reveal">弐　/　制作実績</p>
-          <h2 class="reveal">
-            制作 / 携わった<br /><em>ランディングページ。</em>
-          </h2>
+          <p class="section-number reveal">02 / WORKS</p>
+          <h2 class="reveal">制作した<br />ランディングページ。</h2>
         </div>
 
         <div id="project-list" aria-label="制作実績一覧"></div>
       </section>
 
       <section class="contact section-pad" id="contact">
-        <p class="section-number reveal">参　/　お問い合わせ</p>
+        <p class="section-number reveal">03 / CONTACT</p>
         <div class="contact-main">
           <div class="contact-heading reveal">
             <p class="contact-kicker">ご相談・お見積もり</p>
@@ -127,7 +149,6 @@
         </div>
         <div class="footer-row reveal">
           <p>東京、日本<br /><span id="clock">00:00:00</span></p>
-          <div><a href="#">インスタグラム</a><a href="#">エックス</a></div>
           <p>© <span id="year"></span> 龍成</p>
         </div>
       </section>

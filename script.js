@@ -12,7 +12,16 @@ if (projectList && Array.isArray(window.PROJECTS)) {
       <div class="project-meta">
         <h3>${project.title}</h3>
         <p>${project.role}</p>
-        <time datetime="${project.year}">${project.yearLabel}</time>
+        <a
+          class="project-link"
+          href="${project.siteUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="${project.title}の実際のサイトを見る（新しいタブで開きます）"
+        >
+          <span>実際のサイトはこちら</span>
+          <span class="project-link-arrow" aria-hidden="true">↗</span>
+        </a>
       </div>
     </article>
   `).join('');
