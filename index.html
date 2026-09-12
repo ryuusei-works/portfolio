@@ -1,165 +1,235 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" class="no-js">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#060816" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#080b12" />
     <meta
       name="description"
-      content="龍成 — ホームページ・LP制作を行うフロントエンドエンジニアのポートフォリオ。"
+      content="Webデザイナー・フロントエンドエンジニア龍成のポートフォリオ。Webサイト・LPのデザインと実装を紹介します。"
     />
-    <title>龍成 — Web Engineer</title>
+    <title>RYUSEI — Digital Gallery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=DM+Sans:wght@400;500;600&amp;family=Noto+Serif+JP:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="./assets/hero-gallery.png" fetchpriority="high" />
     <link rel="stylesheet" href="./style.css" />
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
   </head>
   <body>
-    <div class="loader" aria-hidden="true"><span>RYUSEI / PORTFOLIO</span></div>
+    <a class="skip-link" href="#works">制作実績へ移動</a>
 
-    <header class="header">
-      <a class="logo" href="#top" aria-label="トップへ">龍成</a>
-      <nav class="nav" aria-label="メインナビゲーション">
-        <a href="#about">私について</a>
-        <a href="#works">制作実績</a>
-        <a href="#contact">お問い合わせ</a>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-symbol">R</div>
+      <p>OPENING THE GALLERY</p>
+      <span><i></i></span>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="トップへ戻る">
+        RYUSEI
+        <span>DIGITAL GALLERY / TOKYO</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+        <a href="#works">作品を見る <span aria-hidden="true">↗</span></a>
+        <a href="#about">自己紹介</a>
+        <a href="#services">できること</a>
+        <a class="nav-contact" href="mailto:ryuuseiworks628@gmail.com">相談する <span aria-hidden="true">↗</span></a>
       </nav>
-      <button
-        class="menu-button"
-        type="button"
-        aria-label="メニューを開く"
-        aria-expanded="false"
-      >
-        <span></span><span></span>
-      </button>
+
+      <div class="header-actions">
+        <button class="motion-toggle" type="button" aria-pressed="false" aria-label="動きを止める">
+          <span aria-hidden="true">Ⅱ</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+          <span></span><span></span>
+        </button>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero section-pad">
-        <div class="hero-heading">
-          <p class="eyebrow reveal">
-            ホームページ・LP制作を行う<br />フロントエンドエンジニア
-          </p>
-          <h1 class="hero-title" aria-label="ウェブ制作を、あなたと一緒に。">
-            <span class="line"><span>Web制作を</span></span>
-            <span class="line indent"><span>あなたと一緒に。</span></span>
-            <small class="hero-title-en" aria-hidden="true"
-              >Let’s build your website together.</small
-            >
-          </h1>
-        </div>
-        <div class="hero-bottom reveal">
-          <p>
-            見やすく、使いやすく、更新しやすく。<br />目的につながるホームページを丁寧につくります。
-          </p>
-          <a class="works-link" href="#works">
-            <span>制作実績を見る</span><b aria-hidden="true">↓</b>
-          </a>
-        </div>
-      </section>
+    <main>
+      <section class="journey" id="top" aria-label="ポートフォリオギャラリー入口">
+        <div class="hero-stage">
+          <img
+            class="hero-background"
+            src="./assets/hero-gallery.png"
+            width="1728"
+            height="960"
+            alt="星空へ続く夜のデジタルギャラリー"
+            fetchpriority="high"
+          />
+          <div class="hero-tint" aria-hidden="true"></div>
+          <div class="hero-grid" aria-hidden="true"></div>
 
-      <section class="about section-pad" id="about">
-        <p class="section-number reveal">01 / ABOUT</p>
-        <div class="about-heading reveal">
-          <p class="about-role">龍成 ／ Web Engineer</p>
-          <h2>現場で培った視点を、<br />伝わるウェブへつなげています。</h2>
-        </div>
-        <div class="about-body">
-          <figure class="about-photo reveal">
-            <img
-              src="./assets/profile-photo.png"
-              alt="龍成のプロフィール写真"
-              width="569"
-              height="479"
-              loading="lazy"
-            />
-          </figure>
-          <div class="about-copy reveal">
-            <p class="about-intro">
-              現在、Web制作の実務に携わり、Webサイト・LPのコーディングを中心に対応しています。
-            </p>
-            <p class="about-detail">
-              化粧品工場のラインマネージャーを経てWeb制作の道へ進み、2025年から制作会社でホームページ・LP制作やアプリケーション開発に携わっています。<br /><strong
-                class="about-highlight"
-                >大手自動車メーカーの車種サイトや、大手飲料メーカーのLP、大手ホテルのWebサイトなどを担当</strong
-              >してきました。
-            </p>
-            <p class="about-detail">
-              HTML・CSS・SCSS・JavaScriptを使用した実装に加え、Figmaデザインからのコーディング、Figmaを使ったLPデザインから実装まで一貫して対応可能です。<br />React・Next.jsを用いたWeb制作にも、案件内容に応じてAIを活用しながら取り組んでいます。
-            </p>
-            <p class="about-detail">
-              デザインをできる限り忠実に再現し、PC・スマートフォンで崩れのない丁寧なコーディングを心がけています。<br />AIで制作を効率化しながら、最終的なデザイン確認・表示チェック・調整は自身で行い、品質を確認したうえで納品します。<br /><strong
-                class="about-highlight"
-                >内容によっては、Figmaデザインから最短2日程度でのコーディングも可能</strong
-              >です。
-            </p>
-            <p class="about-detail">
-              迅速なレスポンス、丁寧な仕様確認、進捗共有、納期厳守を大切にしています。<br />小規模な修正からLP・Webサイト制作まで、まずはお気軽にご相談ください。
-            </p>
-            <p class="about-note">
-              ※ 守秘義務のため、担当案件の企業名や詳細は非公開としています。
-            </p>
-            <dl>
-              <div>
-                <dt><span>01</span>対応内容</dt>
-                <dd>
-                  ホームページ・LPのコーディング<br />Figmaデザイン・コーディング<br />レスポンシブ・アニメーション実装<br />既存サイトの修正・レイアウト調整
-                </dd>
-              </div>
-              <div>
-                <dt><span>02</span>使用技術</dt>
-                <dd>
-                  HTML / CSS / SCSS / JavaScript<br />TypeScript / React /
-                  Next.js<br />Figma / Git / AI Tools
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="works" id="works">
-        <div class="section-pad works-heading">
-          <p class="section-number reveal">02 / WORKS</p>
-          <h2 class="reveal">制作した<br />ランディングページ。</h2>
-        </div>
-
-        <div id="project-list" aria-label="制作実績一覧"></div>
-      </section>
-
-      <section class="contact section-pad" id="contact">
-        <p class="section-number reveal">03 / CONTACT</p>
-        <div class="contact-main">
-          <div class="contact-heading reveal">
-            <p class="contact-kicker">ご相談・お見積もり</p>
-            <h2>まずは、お話を<br />聞かせてください。</h2>
-          </div>
-          <div class="contact-content reveal">
-            <p class="contact-lead">
-              ホームページやLPの新規制作、リニューアル、更新について承ります。まだ内容が固まっていない段階でも、お気軽にご相談ください。
-            </p>
-            <a class="contact-link" href="mailto:ryuuseiworks628@gmail.com">
-              <span class="contact-link-label">
-                <small>メールでお問い合わせ</small>
-                <strong>ご相談はこちら</strong>
-              </span>
-              <span class="contact-arrow" aria-hidden="true">↗</span>
+          <div class="hero-copy">
+            <p class="eyebrow">WEB DESIGN · FRONTEND · EXPERIENCE</p>
+            <h1><span>想像を、</span><span>体験に変える。</span></h1>
+            <p class="hero-lead">思い描いた魅力を、伝わるデザインと動くWebへ。</p>
+            <a class="text-link" href="#works" data-enter>
+              作品を巡る <span aria-hidden="true">↗</span>
             </a>
-            <p class="contact-note">
-              ご相談内容やご希望の公開時期を添えてお送りください。
-            </p>
+            <a class="skip-journey" href="#works">演出をスキップして一覧を見る</a>
+          </div>
+
+          <div class="gallery-scene" aria-hidden="true">
+            <div class="gallery-heading">
+              <p class="eyebrow">SELECTED WORKS</p>
+              <h2>作品を巡る。</h2>
+              <p>デザインと実装、その両方から組み立てたWebサイトです。</p>
+            </div>
+            <div class="hero-gallery" id="hero-gallery"></div>
+            <a class="gallery-index-link" href="#works">すべての作品を見る <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="journey-footer" aria-hidden="true">
+            <span id="chapter-label">01 — THE ENTRANCE</span>
+            <span class="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span>
+            <span class="journey-progress"><i id="journey-progress"></i></span>
           </div>
         </div>
-        <div class="footer-row reveal">
-          <p>東京、日本<br /><span id="clock">00:00:00</span></p>
-          <p>© <span id="year"></span> 龍成</p>
+      </section>
+
+      <section class="works-section section-pad" id="works" aria-labelledby="works-title">
+        <div class="section-topline reveal">
+          <span>THE COLLECTION</span>
+          <span>WEB / UI / DEVELOPMENT</span>
         </div>
+        <div class="section-heading reveal">
+          <h2 id="works-title">これまでに<br />つくったもの。</h2>
+          <p>ブランドの空気と、使う人の気持ちを大切に。<br />デザインから実装まで一貫して制作しています。</p>
+        </div>
+        <div class="works-list" id="works-list" aria-live="polite"></div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <figure class="about-visual reveal">
+          <img
+            src="./assets/profile-photo.png"
+            width="569"
+            height="479"
+            loading="lazy"
+            alt="制作に取り組む龍成のプロフィール写真"
+          />
+          <figcaption>RYUSEI / WEB ENGINEER</figcaption>
+        </figure>
+        <div class="about-copy reveal">
+          <p class="eyebrow">BEHIND THE GALLERY</p>
+          <h2 id="about-title">考えて、つくる人<span>RYUSEI.</span></h2>
+          <p class="profile-role">DESIGNING CLARITY. BUILDING EXPERIENCES.</p>
+          <p>
+            はじめまして、龍成です。<br />ホームページ・LP制作を中心に、デザインから実装まで一貫して向き合うWebエンジニアです。
+          </p>
+          <p>
+            見た目の美しさだけでなく、「誰に、何を、どう届けるか」を整理することを大切にしています。Figmaの意図を丁寧に読み取り、使いやすく、崩れにくいWebサイトを制作します。
+          </p>
+          <p>まだ形になっていないアイデアも、会話を重ねながら一緒に整えていきます。</p>
+          <a class="text-link" href="#services">できることを見る <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="services-section section-pad" id="services" aria-labelledby="services-title">
+        <div class="section-topline reveal">
+          <span>WHAT I CAN CREATE</span>
+          <span>IDEA → DESIGN → CODE</span>
+        </div>
+        <div class="section-heading reveal">
+          <h2 id="services-title">届けたい価値を、<br />Webの形に。</h2>
+          <p>目的や課題がまだ曖昧でも大丈夫です。<br />必要な情報を整理し、公開まで伴走します。</p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <h3>Webデザイン</h3>
+            <p>情報設計、ワイヤーフレーム、ビジュアルデザインまで。目的に合わせて、迷わず伝わる画面をつくります。</p>
+            <span class="service-detail">UI DESIGN / FIGMA / RESPONSIVE</span>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <h3>フロントエンド実装</h3>
+            <p>デザインの意図をくみ取り、HTML・CSS・JavaScriptで丁寧に実装。動きや表示速度にも配慮します。</p>
+            <span class="service-detail">HTML / CSS / JAVASCRIPT / REACT</span>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <h3>改善・リニューアル</h3>
+            <p>既存サイトの課題を整理し、見せ方や導線を再設計。小さな修正から全体リニューアルまで対応します。</p>
+            <span class="service-detail">AUDIT / REDESIGN / OPTIMIZATION</span>
+          </article>
+        </div>
+
+        <aside class="process-studio reveal" aria-labelledby="process-title">
+          <div class="process-intro">
+            <p class="eyebrow">BEHIND THE CREATION</p>
+            <h3 id="process-title">考えるところから、<br />公開後まで。</h3>
+            <p>サイトの目的と使う人を見失わず、各工程をひとつの体験として設計します。</p>
+          </div>
+          <dl class="process-list">
+            <div>
+              <dt><span>01 / DISCOVER</span>目的と情報を整理</dt>
+              <dd>ヒアリング / リサーチ / 構成</dd>
+            </div>
+            <div>
+              <dt><span>02 / DESIGN</span>魅力が伝わる画面へ</dt>
+              <dd>Figma / UI / プロトタイプ</dd>
+            </div>
+            <div>
+              <dt><span>03 / BUILD</span>使えるWebとして実装</dt>
+              <dd>Frontend / Responsive / QA</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow reveal">LET’S CREATE THE NEXT EXPERIENCE</p>
+        <h2 id="contact-title" class="reveal">形にしたいことを、<br />聞かせてください。</h2>
+        <p class="contact-lead reveal">ホームページやLPの制作・リニューアルについて、<br />小さな相談からお気軽にどうぞ。</p>
+        <a class="contact-button reveal" href="mailto:ryuuseiworks628@gmail.com">
+          <span class="contact-label">EMAIL</span>
+          <span>メールで相談する</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <p class="contact-address reveal">ryuuseiworks628@gmail.com</p>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#top">RYUSEI<span>DIGITAL GALLERY / TOKYO</span></a>
+      <span>DESIGNING THE SPACE BETWEEN IDEA AND EXPERIENCE.</span>
+      <a href="#top">入口に戻る ↑</a>
+      <small>© <span id="year"></span> RYUSEI</small>
+    </footer>
+
+    <dialog class="work-dialog" id="work-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="作品詳細を閉じる">×</button>
+        <div class="dialog-image">
+          <img id="dialog-image" src="" alt="" />
+        </div>
+        <article class="dialog-copy">
+          <p class="eyebrow" id="dialog-category"></p>
+          <p class="dialog-number" id="dialog-number"></p>
+          <h2 id="dialog-title"></h2>
+          <p class="dialog-role" id="dialog-role"></p>
+          <p id="dialog-description"></p>
+          <dl>
+            <div><dt>YEAR</dt><dd id="dialog-year"></dd></div>
+            <div><dt>TOOLS</dt><dd id="dialog-tools"></dd></div>
+          </dl>
+          <a class="visit-link" id="dialog-link" href="#" target="_blank" rel="noopener noreferrer">
+            <span>公開サイトを見る</span><span aria-hidden="true">↗</span>
+          </a>
+          <p class="dialog-note" id="dialog-note">新しいタブで開きます</p>
+        </article>
+      </div>
+    </dialog>
+
     <script src="./data/projects.js"></script>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

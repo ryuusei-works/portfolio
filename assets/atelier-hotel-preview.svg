@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">ATELIER HOTEL ウェブサイトのプレビュー</title>
+  <desc id="desc">深い緑とアイボリーで構成したホテルサイトのダミーデザイン</desc>
+  <rect width="1200" height="760" fill="#e9e5d9"/>
+  <rect x="34" y="34" width="1132" height="692" fill="#17352e"/>
+  <text x="72" y="82" fill="#e9e5d9" font-family="Georgia, serif" font-size="18" letter-spacing="4">ATELIER HOTEL</text>
+  <text x="1045" y="82" fill="#e9e5d9" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">BOOK NOW</text>
+  <rect x="72" y="124" width="590" height="500" fill="#b78e6c"/>
+  <path d="M72 570 L260 320 L420 510 L548 380 L662 500 V624 H72Z" fill="#d5c3a9" opacity=".75"/>
+  <circle cx="480" cy="260" r="84" fill="#e5d8c4" opacity=".8"/>
+  <text x="720" y="245" fill="#e9e5d9" font-family="Georgia, serif" font-size="74">A quiet stay,</text>
+  <text x="720" y="323" fill="#e9e5d9" font-family="Georgia, serif" font-size="74" font-style="italic">made personal.</text>
+  <line x1="720" y1="378" x2="1092" y2="378" stroke="#82978f"/>
+  <text x="720" y="430" fill="#b9c3bc" font-family="Arial, sans-serif" font-size="15" letter-spacing="1">A SMALL HOTEL IN THE HEART OF TOKYO</text>
+  <rect x="720" y="498" width="172" height="52" fill="#e9e5d9"/>
+  <text x="755" y="530" fill="#17352e" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">EXPLORE ROOMS</text>
+</svg>

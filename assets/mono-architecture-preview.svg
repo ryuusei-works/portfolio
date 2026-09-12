@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">MONO ARCHITECTS ウェブサイトのプレビュー</title>
+  <desc id="desc">コバルトブルーと白で構成した建築事務所サイトのダミーデザイン</desc>
+  <rect width="1200" height="760" fill="#f3f2ed"/>
+  <rect x="0" y="0" width="1200" height="92" fill="#f3f2ed"/>
+  <text x="52" y="58" fill="#171717" font-family="Arial, sans-serif" font-size="20" font-weight="bold" letter-spacing="3">MONO / ARCHITECTS</text>
+  <text x="965" y="58" fill="#171717" font-family="Arial, sans-serif" font-size="11" letter-spacing="2">PROJECTS  ABOUT</text>
+  <rect x="0" y="92" width="1200" height="668" fill="#164bd6"/>
+  <polygon points="68,650 68,274 420,142 715,274 715,650" fill="#dedbd1"/>
+  <polygon points="715,650 715,274 958,198 1135,292 1135,650" fill="#c3c0b8"/>
+  <rect x="215" y="376" width="192" height="274" fill="#222421"/>
+  <rect x="758" y="350" width="132" height="300" fill="#f3f2ed"/>
+  <text x="70" y="710" fill="#f3f2ed" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">HOUSE IN BLUE — 2026</text>
+  <text x="1020" y="710" fill="#f3f2ed" font-family="Georgia, serif" font-size="42" font-style="italic">01</text>
+</svg>
